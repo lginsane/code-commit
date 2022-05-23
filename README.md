@@ -79,7 +79,7 @@ yarn add yorkie -S
 
 - `package.json`配置
 
-```$
+```json
 {
     // ...
     "gitHooks": {
