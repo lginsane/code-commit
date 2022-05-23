@@ -2,7 +2,7 @@
 
 代码 commit 前检验处理 yorkie/husky + lint-staged
 
-## commitlint + lint-staged
+## eslint + commitlint + lint-staged
 
 - 安装
 
