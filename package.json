@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "eslint": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "gitHooks": {
+    "commit-msg": "commitlint --edit $1",
+    "pre-commit": "lint-staged"
+  }
+}
