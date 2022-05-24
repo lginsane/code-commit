@@ -69,6 +69,18 @@ npx --no-install commitlint --edit
 npx lint-staged
 ```
 
+### 问题
+
+1. husky 不执行。 警告信息：`git config advice.ignoredHook false`
+
+  [解决办法, 如下](https://github.com/typicode/husky/issues/1113)
+
+```$
+chmod +x .husky/pre-commit
+# and
+chmod +x .husky/commit-msg
+```
+
 ## yorkie
 
 - 下载
